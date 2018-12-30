@@ -1,0 +1,134 @@
+<!doctype html>
+<!-- File       : additem.html
+	 Author     : Marvin Little 
+	 Application: Auto-Care Assitant Application 1.0
+	*************************************************************************************************
+Coming soon:
+	 * Auto-Care Assitant Application 1.5 is in progress which will use AngularJS
+	 * Auto-Care Assitant Application 2.0 will have a MongoDB database with warranty
+	 information, and pictures of the cars.
+-->
+
+<html>
+	<head>
+	    <meta charset="UTF-8" />
+    	<meta name="description" content="Visual Frameworks Assignment-1" />
+    	<meta name="keywords" content="Mobile Develelopment, Visual Frameworks, Car Maintenance, 
+    	Auto-Care, Oil Change, Radiator Flush, Transmission Flush, Spark Plugs, Tire Rotation, Fuel Filter, Air Filter" />
+    	<meta name="robots" content="index, follow" />
+    	<meta name="robots" content="noindex, no follow" />
+    	<meta name="viewport" content="user-scalable=no, width=device-width" />
+    	<meta name="HandheldFriendly" content="True" />
+    	<meta name="MobileOptimized" content="320" />
+<!-- Document Title -->
+    	<title>Auto-Care Service Reminder</title>
+
+		
+<!-- CSS styles will go here. -->
+		<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+		<link href="css/bootstrap-responsive.css" rel="stylesheet" type="text/css">
+    	<link href="css/style.css" rel="stylesheet" type="text/css">
+
+    	<script type="text/javascript" src="script/jquery.js"></script>
+	</head>  
+    
+<!-- Document Body -->
+    <body>
+<!-- Section element wraos all content in the Body -->    
+    	<<section>
+				<header data-role="header">
+					 <h1>Auto-Care Service Reminder</h1>
+				</header>
+				<form action="#" method="post">
+					 <fieldset>
+							<legend>Vehicle Profile</legend>
+							<br />
+							<nav role="navbar">
+								 <p><a href="#">Display Storage</a><a href="#">Clear Storage</a><a href="additem.html">Add New Vehicle</a></p>
+							</nav>
+							* Fields are required
+							<ul>
+								 <ul>
+										<li><label for="year">Vehicle year</label></li>
+								 </ul>
+							</ul>
+							<br />
+							<div>
+								 <ul>
+										<li><label for="miles">Vehicle mileage</label><input maxlength="20" name="miles" size="20" type="text" placeholder="Enter miles (ex. 20321)" /></li>
+								 </ul>
+							</div>
+							<br />
+							<div>
+								 <ul>
+										<li><label for="make">Vehicle make</label><input maxlength="20" name="make" size="20" type="text" placeholder="Enter make (ex. Acura)" /></li>
+								 </ul>
+							</div>
+							<br />
+							<div>
+								 <ul>
+										<li><label for="model">Vehicle model</label><input maxlength="20" name="model" size="20" type="text" placeholder="Enter model (ex. Integra)" /></li>
+								 </ul>
+							</div>
+							<br />
+							<ul>
+								 <ul>
+										<li>Engine size</li>
+										<li><input name="engineSize" type="radio" value="4-cylinder" /> 4-cylinder</li>
+										<li><label for="enginesize_2"><input name="engineSize" type="radio" value="6-cylinder" /> 6-cylinder</label></li>
+										<li><label for="enginesize_3"><input name="engineSize" type="radio" value="8-cylinder" /> 8-cylinder</label></li>
+										<li><label for="enginesize_4"><input name="engineSize" type="radio" value="10-cylinder" /> 10-cylinder</label></li>
+										<li><label for="enginesize_5"><input name="engineSize" type="radio" value="12-cylinder" /> 12-cylinder</label></li>
+										<li><label for="enginesize_6"><input name="engineSize" type="radio" value="16-cylinder" /> 16-cylinder</label></li>
+								 </ul>
+							</ul>
+							<br />
+							<ul>
+								 <li>High-Performance chargers</li>
+								 <li><label><input name="HighPo" type="radio" value="Supercharged" /> Supercharged</label></li>
+								 <li><label><input name="HighPo" type="radio" value="Turbocharged" /> Turbocharged</label></li>
+								 <li><label><input name="HighPo" type="radio" value="Twin-Turbocharged" /> Twin-Turbocharged</label></li>
+							</ul>
+					 </fieldset>
+					 <fieldset>
+							<legend>Services</legend>
+							<ul>
+								 <ul>
+										<li><label for="services">Service type</label></li>
+								 </ul>
+							</ul>
+							<br />
+							<ul>
+								 <ul>
+										<li><label for="date">Service Date</label><br /><input type="date" placeholder="Service date (yyyy-mm-dd)" /></li>
+								 </ul>
+							</ul>
+							<br />
+							<ul>
+								 <ul>
+										<li><label for="warranty">Vehicle Warranty</label><br /><input max="150000" min="0" step="7500" type="range" value="0" /></li>
+								 </ul>
+							</ul>
+							<br /><br />
+							<ul>
+								 <ul>
+										<li><label for="notes">Notes</label></li>
+								 </ul>
+							</ul>
+							<br /><input type="submit" value="Save Vehicle" /><input name="today" type="hidden" value="today" />
+					 </fieldset>
+				</form>
+		 </section>
+    	<script>
+	    	$('#submit').click(function(){
+			    $("html, body").animate({ scrollTop: 0 }, 600);
+				return false;
+		 	});
+		</script>	
+		<script type="text/javascript" src="script/json.js"></script>
+		<script type="text/javascript" src="script/main.js"></script>
+
+
+			  
+ 	</body>
+</html>
